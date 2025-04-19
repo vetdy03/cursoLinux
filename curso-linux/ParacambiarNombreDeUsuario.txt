@@ -1,0 +1,19 @@
+usermod -l vetdy kali
+usermod -d /home/vetdy -m vetdy
+groupmod -n vetdy kali
+--------
+ Esto cambiará:
+
+Usuario: kali → vetdy
+
+Carpeta personal: /home/kali → /home/vetdy
+
+Grupo primario: kali → vetdy
+
+--------
+sudo nano /etc/hostname
+- cambia kali por vetdy
+sudo nano /etc/hosts -> Busca una línea como esta:-> 127.0.1.1       kali por kali
+sudo reboot -> reinicia
+
+
