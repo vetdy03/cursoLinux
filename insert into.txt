@@ -53,3 +53,8 @@ SELECT * FROM karex
 
 
 
+
+
+
+INSERT INTO usuarios (nombre, apellido, codigo_sis, correo, telefono, contrasena, created_at, updated_at, id_rol)
+VALUES ('Juan', 'Perez', '202112345', 'juan.perez@example.com', '789456123', 'mi_contrasena_segura', NOW(), NOW(), 1);
