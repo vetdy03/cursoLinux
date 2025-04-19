@@ -1,0 +1,55 @@
+ingresar como root 
+*servicio|pass| usuario| host|
+mysql -p -u root -h localhost
+*varchar-> variable caracter
+
+INSERTANDO DE UNA FORMA LARGA
+INSERT INTO alumno (ci, ciudad, nombres, apellidos, edad) VALUES (80808, 'cb', 'cristian', 'cordonva', '23')
+
+INSERT INTO alumno VALUES (80808, 'cb', 'cristian', 'cordonva', '23')
+INSERT INTO alumno VALUES(6406966, 'CB', 'JUAN', 'PEREZ', 14 )
+INSERT INTO alumno VALUES(1234567, 'SC', 'GUIDO', 'MILIVOY',35 )
+INSERT INTO alumno VALUES(9876543, 'CB', 'VIVIAN ORTEGA', 'PEREZ', 14 )
+		table kardex
+SELECT * FROM alumno WHERE nombres>= 'V' edad>=80;
+CREATE TABLE kardex(ci INTEGER NOT NULL, nombre_materia VARCHAR(30) NOT NULL, nota SMALLINT NOT NULL, FOREING KEY (ci) REFERENCES alumno(ci);
+		insert
+INSERTANDO A LA TABLA KARED		
+INSERT INTO kardex VALUES(6406966, 'LINUX', 100);
+INSERT INTO kardex VALUES(6406966, 'TELEFONIA IP', 100);
+INSERT INTO kardex VALUES(1234567, 'LINUX', 100);
+INSERT INTO kardex VALUES(6406966, 'redes', 70);
+INSERT INTO kardex VALUES(1234567, 'CABLEADO', 80);
+INSERT INTO kardex VALUES(9876543, 'LINUX', 95);
+INSERT INTO kardex VALUES(9516234, 'CABLEADO', 60);
+INSERT INTO kardex VALUES(7418525, 'TELEFONIA IP', 20);
+INSERT INTO kardex VALUES(9876543, 'TELEFONIA IP', 20);
+INSERT INTO kardex VALUES(7418525, 'LINUX', 20);
+
+SELECT alumno.ci, nombres, apelidos, nombre_amteria, nota FROM alumno, kardex WHERE alumno.ci = kardex.ci 
+
+SELECT alumno.ci. COUNT(kardex)
+
+		ACTUALIZACIONES
+UPDATE alumno SET edad=18 WHERE CI=9561234
+DELETE FROM alumno WHERE ci=9516234
+
+	eliminando
+DROP TABLE kardex;
+SHOE TABLES;
+
+
+	CRETE USER
+CREATE USER 'admin'@'%' IDENTIFY WITH mysql_native_password BY 'mundolibre';
+
+GRANT ALL ON escuela.kardex TO 'admin'@'%';
+GRANT ALL ON escuela.* TO 'admin'@'%';
+
+quitar permisos
+REVOKE ALL PRIVILEGES ON escuela.* FROM 'admin'@'%';
+
+GRANT SELECT ON escuela.kardex TO 'admin'@'%';
+SELECT * FROM karex
+
+
+

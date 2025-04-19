@@ -1,0 +1,25 @@
+cosas de firewall
+
+firewall-cmd --permanent --zone=public --add-port=80/tcp
+firewall-cmd --reload
+
+COMANDO PARA QUE NO MUESTRE EL POR DEFECTO
+mv /etc/httpd/conf.d/welcome.conf /etc/httpd/conf.d/welcome.conf.otro 
+
+yum -y install mod_ssl openssl
+
+
+copiamos los archivos creados a los directorios correspondiente
+
+
+				MYSQL
+yum install 
+
+	Ingresar a mysql
+#mysql –p –u root –h localhost
+	usar mysql
+use mysql;
+	consultar host y user
+SELECT host, user FROM user;
+	
+	
