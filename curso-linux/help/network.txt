@@ -1,0 +1,40 @@
+olaf
+Cambiar o renovar la dirección IP
+	Desconecta la red actual:
+sudo ifconfig eth0 down
+	para conexiones Wi-Fi:
+sudo ifconfig wlan0 down
+	Vuelve a conectar la red:
+sudo ifconfig eth0 up
+	para conexiones Wi-Fi:	
+sudo ifconfig wlan0 up
+
+Liberar y renovar la IP (para DHCP):
+	Liberar la IP:
+sudo dhclient -r
+	Renovar la IP:
+sudo dhclient
+
+Reiniciar el servicio de resolución DNS:
+	Abre una terminal y ejecuta:
+sudo systemctl restart systemd-resolved
+	Alternativamente, puedes limpiar la caché DNS con
+sudo resolvectl flush-caches
+
+Cambiar la dirección MAC
+	Instala macchanger si no lo tienes:
+sudo apt-get install macchanger
+	Apaga la interfaz de red:
+sudo ifconfig eth0 down
+	para Wi-Fi:
+sudo ifconfig wlan0 down
+	Cambia la dirección MAC:
+sudo macchanger -r eth0
+	para Wi-Fi:
+sudo macchanger -r wlan0
+	Enciende la interfaz de red:
+sudo ifconfig eth0 up
+	para Wi-Fi:
+sudo ifconfig wlan0 up
+
+

@@ -1,0 +1,10 @@
+87CEEB
+FF6F61
+FFFFFF
+333333
+FA4751
+
+
+npm
+git config user.name "erlindaTuBb"
+git config user.email "erlindaTuBb"

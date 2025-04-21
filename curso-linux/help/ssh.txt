@@ -1,0 +1,47 @@
+sudo apt update
+
+	INSTALL
+sudo apt install openssh-server
+
+	INICIAR
+sudo systemctl start ssh
+
+	SSH PARA QUE ARRANQUE AL INICIAR EL SISTEMA
+sudo systemctl enable ssh
+
+	FIREWALL PARA PERMITIR CONEXIONES SSH (SI ESTÁS USANDO UFW)
+sudo ufw allow ssh
+
+	VERIFICAR EL ESTADO
+sudo systemctl status ssh
+
+	MODIFICAR CONFIGURACIÓN DE SSH (OPCIONAL)
+sudo nano /etc/ssh/sshd_config
+
+	REINICIAR
+sudo systemctl restart ssh
+
+	VERIFICAR PUERTO OPEN 
+sudo netstat -tuln | grep ssh OOOOOO sudo ss -tuln | grep ssh
+
+	CONECTAR CON LOCAL
+ssh usuario@direccion_ip
+
+	CONECTAR REMOTA NO LOCAL
+ssh usuario@direccion_ip_publica
+
+	PUERTO CAMBIADO 
+ssh usuario@direccion_ip -p puerto
+
+		CONECTAR REMOTA NO LOCAL 	AWS
+con el key generado por aws
+chmod 400 "vetdy.pem"
+ssh -i "vetdy.pem" admin@ec2-44-223-185-62.compute-1.amazonaws.com
+	ABRIR PUERTO SSH 1234
+sudo nano /etc/ssh/sshd_config
+	BUSCAR LINEA CON PORT
+Port 22
+Port 1234
+	REINICIAR
+service ssh restart
+

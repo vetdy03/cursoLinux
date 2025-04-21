@@ -1,0 +1,5 @@
+sudo nano /etc/default/grub
+GRUB_TIMEOUT=5
+GRUB_TIMEOUT=10
+sudo update-grub
+sudo reboot

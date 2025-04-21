@@ -1,0 +1,2 @@
+	ver en que repo estoy
+git remote -v

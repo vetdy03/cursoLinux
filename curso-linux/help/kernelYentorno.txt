@@ -1,0 +1,3 @@
+ver la resoluciones disponible en linux
+	xrandr
+	

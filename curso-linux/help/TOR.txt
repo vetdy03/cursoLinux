@@ -1,0 +1,8 @@
+	ESTADO
+service tor status	
+	INICIAR
+SERVICE TOR START
+	APAGAR
+service tor stop
+	VER EN QUE PUERTO
+netstad -ano | head

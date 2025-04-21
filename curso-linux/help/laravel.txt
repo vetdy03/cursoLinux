@@ -1,0 +1,20 @@
+git pull
+php --ini
+sudo apt-get install php8.2-xml\n
+nano /etc/php/8.2/cli/php.ini\n
+sudo nano /etc/php/8.2/cli/php.ini\n
+sudo systemctl restart apache2\n
+composer update
+cp .env.example .env 
+php artisan migrate 
+php artisan serve
+ 
+ 
+npm run dev
+https://getcomposer.org/download/
+
+
+install pgadmin
+sudo apt install curl apt-transport-https gnup2
+sudo curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | sudo apt-key add
+

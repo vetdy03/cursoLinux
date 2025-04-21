@@ -1,0 +1,27 @@
+
+no están activadas correctamente
+
+swap manualmente. Ejecuta en la terminal:
+o la particion que se desea
+sudo swapon /dev/sda7
+
+Luego, revisa si se ha activado correctamente:
+free -h
+
+Verificar el archivo /etc/fstab
+sudo nano /etc/fstab
+
+ agrégalas y guarda el archivo.
+ /dev/sda5 none swap sw 0 0
+ 
+ aplicar los cambios
+ sudo mount -a
+ 
+revisa el swap area
+free -h
+
+Reiniciar el sistema
+sudo reboot
+
+
+ 

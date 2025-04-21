@@ -1,0 +1,66 @@
+INSTALAR
+wget https://www.apachefriends.org/xampp-files/8.2.0/xampp-linux-x64-8.2.0-0-installer.run		SI NO FUNCIONA OTRO DESDE LA PAGINA OFICIAL
+
+PERMISOS 
+chmod +x xampp-linux-x64-8.2.0-0-installer.run
+
+EJECUTAR
+sudo ./xampp-linux-x64-8.2.0-0-installer.run
+
+VER IP
+hostname -I	curl icanhazip.com	dig +short myip.opendns.com @resolver1.opendns.com		ip addr show
+
+INICIAR
+sudo /opt/lampp/lampp start
+
+DETENER
+sudo /opt/lampp/lampp stop
+
+REINICIAR
+sudo /opt/lampp/lampp restart
+
+RUTA DE HTDOCS EN LINUX 
+/opt/lampp/htdocs/
+
+XAMPP EN SERVER
+ABRIR ARVCHIVO 
+sudo nano /opt/lampp/etc/httpd.conf
+
+BUSAARL LINEA 80 
+Listen 80
+
+BUSCAR QUE ESTE ASI
+<Directory "/opt/lampp/htdocs">
+    Options Indexes FollowSymLinks Includes ExecCGI
+    AllowOverride All
+    Require all granted
+</Directory>
+
+REINICAR APACHE
+
+scp -i path/to/your-key.pem /path/to/local/file your-username@your-instance-ip:/path/to/remote/directory
+Supongamos que:
+
+Tu archivo de clave privada está en ~/keys/my-key.pem.
+El archivo que deseas subir está en ~/Documents/example.txt.
+El nombre de usuario en tu instancia de AWS es ec2-user.
+La dirección IP pública de tu instancia de AWS es 123.45.67.89.
+Deseas subir el archivo al directorio /home/ec2-user/uploads.
+
+			EJEMPLO DE MI
+scp -i /home/kali/demos/vetdy.pem /home/kali/demos/prac.zip admin@ec2-44-223-185-62.compute-1.amazonaws.com:/opt/lampp/htdocs
+
+paso1
+particionar el disco 100 gb
+
+paso 2
+iso de linux
+
+paso 3
+pendrive bootear el iso de linux con rufs
+
+paso 4 
+entrar a la bios
+
+
+

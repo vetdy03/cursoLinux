@@ -1,0 +1,18 @@
+sudo apt update
+sudo apt install zip
+
+zip nombre_del_zip.zip archivo_a_comprimir
+EJEMPLO
+zip archivo.zip archivo.txt
+
+DIRECTORIO
+zip -r nombre_del_zip.zip directorio_a_comprimir
+
+VARIOS ARCHVISO
+zip nombre_del_zip.zip archivo1 archivo2 archivo3
+
+VERIFICAR 
+unzip -l nombre_del_zip.zip
+
+EXTRAER UN ARCHIVO de un zip 
+unzip archivo.zip

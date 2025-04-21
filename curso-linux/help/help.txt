@@ -1,0 +1,99 @@
+Debian GNU/Linux 
+
+
+
+Estos mensajes indican que GNOME Shell no pudo utilizar su interfaz incorporada para capturas de pantalla y está recurriendo al método de captura de pantalla por X11 como solución de respaldo.
+
+### Posibles causas y soluciones:
+
+1. **Problemas de configuración de GNOME Shell:**
+   - A veces, problemas con la configuración de GNOME Shell pueden llevar a que la interfaz incorporada de captura de pantalla no funcione correctamente. Reiniciar la sesión de usuario o reiniciar el sistema puede ayudar a resolver este tipo de problemas.
+
+2. **Problemas con las extensiones de GNOME:**
+   - Algunas extensiones de GNOME pueden interferir con la funcionalidad de captura de pantalla. Intenta desactivar temporalmente las extensiones para ver si eso resuelve el problema.
+
+3. **Problemas de permisos:**
+   - Asegúrate de que tu usuario tenga los permisos necesarios para realizar capturas de pantalla. Esto generalmente no es un problema si estás usando tu propio usuario en el sistema.
+
+4. **Problemas con el servidor gráfico X11:**
+   - A veces, problemas con el servidor gráfico X11 (que maneja las aplicaciones gráficas en sistemas Linux) pueden interferir con la captura de pantalla. Reiniciar el servidor X11 o reiniciar el sistema podría ayudar a resolver estos problemas.
+
+### Pasos para reiniciar el servidor X11:
+
+Si decides intentar reiniciar el servidor gráfico X11, sigue estos pasos:
+
+1. Cierra todas las aplicaciones y guarda tu trabajo.
+
+2. Presiona `Ctrl+Alt+F1` para cambiar a una terminal virtual (TTY).
+
+3. Inicia sesión con tu nombre de usuario y contraseña.
+
+4. Ejecuta el siguiente comando para detener el servidor X11:
+
+   ```bash
+   sudo service gdm stop
+   ```
+
+   O en algunos sistemas:
+
+   ```bash
+   sudo systemctl stop gdm
+   ```
+
+5. Después de unos segundos, reinicia el servidor X11 con:
+
+   ```bash
+   sudo service gdm start
+   ```
+
+   O:
+
+   ```bash
+   sudo systemctl start gdm
+   ```
+
+6. Presiona `Ctrl+Alt+F7` para volver a la sesión gráfica (puede ser `F8` o `F9` dependiendo de la configuración).
+
+7. Intenta realizar una captura de pantalla para verificar si el problema persiste.
+
+### Verificación adicional:
+
+Si los pasos anteriores no resuelven el problema, considera revisar los registros de GNOME o del sistema para obtener más detalles sobre por qué la interfaz de captura de pantalla está fallando. Los registros pueden proporcionar pistas adicionales sobre posibles errores o conflictos que estén ocurriendo.
+
+Si el problema continúa después de intentar estos pasos, podría ser útil buscar en foros específicos de GNOME o consultar la documentación oficial de GNOME para soluciones adicionales o reportar el problema si es un error conocido.
+
+	VER KERNEL
+uname -a
+
+
+
+
+
+
+PROGRAMAS DESPUES DESITALAR nautilus
+TRACEROUTE
+traceroute 8.8.8.8 
+
+LOGS DE INSTALACIÓN
+cd /var/log/installer
+cat syslog
+
+
+
+COMANDOS TAREA 7.1
+IMPORTANTE SOBRE DEFENSA DE ACTIVIDAD 7:
+
+Paso 1: Realizar un video de no mas de 5 minutos mostrando la conexión traceroute de Kali a Metasploitable2, demostrar los logs de instalación de Kali y el router 1.
+Paso 2: Publique el vídeo en Youtube en su cuenta institucional.
+
+
+Atte.
+
+MAC
+
+borrar nadroid studio si es que n ofunciona..
+/opt/
+
+
+
+

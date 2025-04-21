@@ -1,0 +1,9 @@
+problemas en:
+
+app>models>docente
+		8 a 9 linea
+	
+problems in
+app>database>create usuarios
+	php artisan migrate
+
