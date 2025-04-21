@@ -1,0 +1,2 @@
+qwgraph 
+sudo tsk

@@ -1,0 +1,118 @@
+--------------☆☆☆☆☆☆-------------------
+GRABAR PANTALLA
+VokoscreenNG
+VER LAS CARACTERISTICAS
+neofecth
+--------------☆☆☆☆☆☆-------------------
+MONTAR UNA DISCO
+sudo mkdir /mnt/vetdyfiles 
+sudo mount -t ntfs-3g /dev/sda5 /mnt/vetdyfiles
+--------------☆☆☆☆☆☆-------------------
+DESINSTALAR UN PROGRAMA COM OSER:
+sudo apt-get remove xfce4-clipman
+sudo apt-get purge xfce4-clipman  # Opcional, para eliminar archivos de configuración
+sudo apt-get autoremove           # Opcional, para limpiar paquetes no necesarios
+
+--------------☆☆☆☆☆☆-------------------
+AGREGAR USER
+sudo passwd nombre_usuario
+sudo adduser nombre_usuario
+
+--------------☆☆☆☆☆☆-------------------
+
+COMANDOS PARA AGREGAR CON WIN+E EN LINUX AL KEYBOARD
+thunar /ruta/del/directorio
+
+--------------☆☆☆☆☆☆-------------------
+COMANDO PARA AGREGAR UN ATAJO DE TECLADO DE TECLADO
+xfce4-keyboard-settings
+
+https://api.proxyscrape.com/v2/?request=displayproxies&protocol=http&timeout=10000&country=all&ssl=all&anonymity=all
+
+https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4p&timeout=10000&country=all&ssl=all&anonymity=all
+
+https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5p&timeout=10000&country=all&ssl=all&anonymity=all
+
+
+
+
+
+Cvv: Rdn
+PASO1, Registrarse en paypal intentando donar 1 $ y al final no donar
+
+https://www.paypal.com/mx/webapps/mpp/donar/institution?name=azul
+
+rur.ize.lda8+31047@gmail.com
+
+paypay23a456 CONTRA
+Numero mx 5567003225
+
+
+5101256280385118|06|2032|182 virt
+4322644583665680|01|2027|341 prim
+
+
+
+
+ ESTO ES BUENO
+ 4322644583668361|01|2027|175
+ 
+ 
+4322644544534660|01|2027|162 x
+4322644544140781|01|2027|694 x
+4322644544237330|01|2027|379
+4322644544377557|01|2027|847
+4322644544821240|01|2027|423
+4322644544387580|01|2027|922 x
+4322644544516113|01|2027|077 x
+
+4322644583668031|01|2027|688
+4322644583662638|01|2027|594
+
+ruriz.e.lda8+517@gmail.com
+paypayxd123a456
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+planilla y evalua
+
+
+llamar a esa ruta
+
+
+titulo: control/generaración de planillas chek
+ /seguimiento/seguimiento y evaluación
+
+
+
+
+
+    Route::get('/evaluacion/{id}', 'show');
+
+
+mostrar detalles en id(presencial ) lo que samuel recien va a agregar.
+
+
+/bin/systemctl status nessusd.service
+https://kali:8834/#/scans/folders/my-scans
+
+
+
+
